@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  padding: 0 20px;
+}
+
+main {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+p {
+  text-align: left;
+  padding: 0 20px;
+}
+
+code {
+  color: firebrick;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: lightblue;
+  border: solid 2px;
+}
+
+.box-animate {
+  animation-name: moveObject;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes moveObject {
+  from {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(300px);
+  }
+
+  to {
+    transform: translateX(300px) scale(1.5);
+  }
+}
+
+button {
+  margin-top: 20px;
+}

@@ -1,0 +1,69 @@
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    padding: 0px;
+    margin: 0px;
+    background-color: #000;
+    color: #fff;
+}
+
+.screen1 {
+    min-width: 100%;
+    min-height: 100vh;
+    background-image: url('./images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.screen1 .content {
+    width: 40%;
+    text-align: center;
+}
+.screen1 .content .desc {
+    font-size: 16px;
+    color: #b3b3b3;
+    line-height: 25px;
+}
+
+.screen1 img {
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.screen {
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen .content {
+    width: 70%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.screen .content .desc {
+    font-size: 16px;
+    color: #b3b3b3;
+    line-height: 25px;
+}
+.screen .content img {
+    width: 500px;
+    height: 500px;
+}
+
+.screen3 {
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+.screen4 {
+    min-width: 100%;
+    min-height: 100vh;
+}
