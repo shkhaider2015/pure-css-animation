@@ -10,13 +10,25 @@ body {
 .screen1 {
     min-width: 100%;
     min-height: 100vh;
-    background-image: url('./images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
+
+.screen1 > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    inset: 1;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.5;
+}
+
 .screen1 .content {
     width: 40%;
     text-align: center;
@@ -68,17 +80,29 @@ body {
     min-height: 100vh;
 }
 
+.screen .content .line1 {
+    margin-top: 50px;
+}
+.screen .content .line2 {
+    margin-bottom: 50px;
+}
 .screen .content .line {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: nowrap;
-    overflow-x: auto;
+    overflow-x: hidden;
     gap: 20px;
     padding: 20px;
-    
+    width: 80%;
 }
 
 .screen .content .line .item {
     min-width: 100px;
+    min-height: 30px;
+    background-color: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
 }

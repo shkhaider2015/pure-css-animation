@@ -1,0 +1,21 @@
+
+.screen1 > img {
+    animation: header-image-animation linear;
+    animation-timeline: view();
+    animation-range: exit;
+    transform-origin: top;
+}
+
+@keyframes fade-out {
+    to { opacity: 0; }
+}
+
+@keyframes header-image-animation {
+    25% { 
+        opacity: 1; 
+    }
+    85%, 100% { 
+        opacity: 0;
+        scale: 3;
+    }
+}
