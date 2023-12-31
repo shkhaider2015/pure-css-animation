@@ -67,3 +67,18 @@ body {
     min-width: 100%;
     min-height: 100vh;
 }
+
+.screen .content .line {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+.screen .content .line .item {
+    min-width: 100px;
+}

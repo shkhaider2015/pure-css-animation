@@ -1,0 +1,15 @@
+
+.screen .content .line {
+    animation: scrolling linear;
+    animation-timeline: scroll(root);
+}
+
+.screen .content .line.line2 {
+    animation-direction: reverse;
+}
+
+@keyframes scrolling {
+    to {
+        transform: translate( calc(-10% - 0.5rem) );
+    }
+}

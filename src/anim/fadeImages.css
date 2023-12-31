@@ -2,6 +2,8 @@
 .screen .content > img {
     animation: fade-in linear;
     animation-timeline: view();
+    /* animation-range-start: 200px; Animation will start after 200px image cover */
+    /* animation-range-end: 200px; Animation will end when 200px space left */
 }
 
 @keyframes fade-in {
